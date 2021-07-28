@@ -1,0 +1,85 @@
+<style>
+    td {
+        border: 1px solid;
+        width: 200px;
+        border-color: blue;
+        margin: 20px;
+    }
+    
+    div {
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-family: 'Bree Serif';
+    }
+    
+    table {
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-family: 'Bree Serif';
+    }
+    
+    h1 {
+        color: rgb(163, 199, 199);
+    }
+    
+    h2 {
+        color: rgb(19, 66, 19)
+    }
+
+</style>
+<div>
+
+    <h1>Nota dos Alunos</h1>
+
+</div>
+
+<table id="minha-tabela">
+    <tr class="linha">
+        <td>Nome</td>
+        <td>Nota Matematica</td>
+        <td>Status da Matematica</td>
+        <td>Nota Ingles</td>
+        <td>Status da Ingles</td>
+        <td>Status do aluno</td>
+    </tr>
+
+    <tbody id="nova-tbody">
+        <tr>
+        </tr>
+    </tbody>
+</table>
+
+<div id='select' >
+    <form>
+        <div>
+            Nome do aluno:<label for="select-name"></label>
+            <input id='select-name' disabled placeholder="Campo inalterável" name="select-name" type="text">
+        </div>
+        <div>
+            Nota de matematica:<label for="select-math"></label>
+            <input id='select-math' placeholder="Editar nota"  name='select-name' type="number">
+        </div>
+        <div>
+            Status da nota do aluno:<label for="select-math-status"></label>
+            <input id='select-math-status' disabled placeholder="Campo inalterável" name='select-name' type="text">
+        </div>
+        <div>
+            Nota de biografia: <label for="select-biografia"></label>
+            <input id='select-biografia'  placeholder="Editar nota" name='select-name' type="Number">
+        </div>
+        <div>
+            Status da nota do aluno:<label for="select-biografia-status"></label>
+            <input id='select-biografia-status' disabled placeholder="Campo inalterável" name='select-name' type="text">
+        </div>
+        <button id='button' type="button" onclick="update()">Salvar</button>
+    </form>
+</div>
+
+
+<script src="grade-valideitor.js"></script>
+<script src="form-manage.js"></script>
+<script src="table-manager.js"></script>
+<script src="studants.js"></script>
+<script src="teste.js "></script>
